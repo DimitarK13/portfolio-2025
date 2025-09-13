@@ -32,6 +32,12 @@
   --clr-primary-900: #10af79;
   --clr-primary-950: #0d8c61;
 
+  --linear-gradient: linear-gradient(
+    to right,
+    var(--clr-primary-200),
+    var(--clr-primary-700)
+  );
+
   --padding-inline: 16px;
   --container-max-sm: calc(540px + var(--padding-inline) * 2);
   --container-max-md: calc(720px + var(--padding-inline) * 2);
@@ -166,6 +172,12 @@ h6,
 
 .w-semi-bold {
   font-weight: 600;
+}
+
+.text-linear-gradient {
+  background: var(--linear-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container {
