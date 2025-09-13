@@ -46,12 +46,20 @@
   padding: 0;
 }
 
-body {
-  min-height: 100vh;
-  font-family: 'Quicksand', sans-serif;
+html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
   text-rendering: optimizeSpeed;
+
+  min-height: 100vh;
+  background-color: var(--clr-neutral-dark);
+
   line-height: 1.6;
+  font-size: 18px;
+  color: var(--clr-neutral-100);
 }
 
 ul,
@@ -101,6 +109,7 @@ h6,
 .h5,
 .h6 {
   font-weight: 600;
+  color: var(--clr-neutral-50);
 }
 
 h1,
@@ -137,6 +146,26 @@ h6,
 .h6 {
   font-size: 20px;
   line-height: 1.5;
+}
+
+.body-xl {
+  font-size: 22px;
+}
+
+.body-l {
+  font-size: 20px;
+}
+
+.body-s {
+  font-size: 14px;
+}
+
+.body-xs {
+  font-size: 12px;
+}
+
+.w-semi-bold {
+  font-weight: 600;
 }
 
 .container {
