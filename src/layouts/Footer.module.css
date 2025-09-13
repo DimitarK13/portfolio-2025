@@ -1,0 +1,24 @@
+.footer {
+  margin-top: 100px;
+  padding-block: 28px;
+  background-color: var(--clr-neutral-950);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 120px;
+    padding-block: 40px;
+  }
+}
