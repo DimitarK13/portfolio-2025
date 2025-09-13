@@ -44,6 +44,11 @@
   --container-max-lg: calc(1200px + var(--padding-inline) * 2);
 }
 
+:focus {
+  outline: 1px solid var(--clr-primary-50);
+  outline-offset: 2px;
+}
+
 *,
 *::before,
 *::after {
@@ -262,4 +267,48 @@ h6,
   .container {
     max-width: var(--container-max-lg);
   }
+}
+
+.btn {
+  padding: 8px 40px;
+  border-radius: 1000vw;
+  font-weight: 600;
+}
+
+.btn-primary {
+  position: relative;
+  background: linear-gradient(var(--clr-primary-700), var(--clr-primary-700))
+      padding-box,
+    linear-gradient(to bottom, var(--clr-primary-50), var(--clr-primary-400))
+      border-box;
+  border: 1px solid transparent;
+  color: var(--clr-neutral-950);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  width: 163px;
+  height: 100px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    var(--clr-primary-50) 0%,
+    var(--clr-primary-700) 100%
+  );
+  border-radius: 1000vw;
+  z-index: -1;
+
+  transition: all 175ms ease-out;
+}
+
+.btn-primary:hover::before,
+.btn-primary:focus::before {
+  width: 225px;
+  height: 138px;
+  transform: translate(-50%, 50%);
 }
