@@ -44,3 +44,22 @@ export const textVariants = {
     transition: { duration: 0.5 },
   },
 };
+
+export const cardContainerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2, // delay between cards
+    },
+  },
+};
+
+export const cardVariants = {
+  hidden: { opacity: 0, y: 20, scale: 0.95 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { type: 'spring', stiffness: 300, damping: 20 },
+  },
+};
