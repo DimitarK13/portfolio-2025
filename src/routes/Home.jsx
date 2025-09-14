@@ -1,7 +1,10 @@
+import Button from '../components/Button';
+import Hero from '../sections/Hero';
+
 function Home() {
   return (
     <>
-      <h1>Home</h1>
+      <Hero />
     </>
   );
 }
