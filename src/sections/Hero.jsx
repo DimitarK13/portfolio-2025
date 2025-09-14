@@ -35,9 +35,7 @@ function Hero() {
           </motion.div>
         </motion.div>
 
-        <div className={styles.dashboard}>
-          <Dashboard />
-        </div>
+        <Dashboard />
       </div>
     </section>
   );
