@@ -277,6 +277,7 @@ h6,
 
 .btn-primary {
   position: relative;
+  display: inline-flex;
   background: linear-gradient(var(--clr-primary-700), var(--clr-primary-700))
       padding-box,
     linear-gradient(to bottom, var(--clr-primary-50), var(--clr-primary-400))
