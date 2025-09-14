@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 
+import Dashboard from '../components/hero/Dashboard';
 import Button from '../components/Button';
 import { containerVariants, textVariants } from '../utils/animations';
 
@@ -33,6 +34,10 @@ function Hero() {
             <Button link="/contact">Get Your Project</Button>
           </motion.div>
         </motion.div>
+
+        <div className={styles.dashboard}>
+          <Dashboard />
+        </div>
       </div>
     </section>
   );
