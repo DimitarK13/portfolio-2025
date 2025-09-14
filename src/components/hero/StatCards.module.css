@@ -1,0 +1,21 @@
+.cardsContainer {
+  padding: 16px;
+  background-color: var(--clr-neutral-950);
+  border-radius: 32px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.card {
+  padding: 16px;
+  background-color: var(--clr-neutral-900);
+  border-radius: 24px;
+}
+
+@media (max-width: 1079px) {
+  .cardsContainer {
+    display: none;
+  }
+}
