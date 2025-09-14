@@ -1,0 +1,43 @@
+.dashboard {
+  margin-top: 60px;
+  padding: 16px;
+  background-color: rgb(256 256 256 / 0.15);
+  border: 1px solid var(--clr-primary-100);
+  border-radius: 40px;
+
+  display: grid;
+  gap: 12px;
+
+  position: relative;
+  isolation: isolate;
+}
+
+.dashboard::before {
+  content: '';
+  width: calc(100% + 32px);
+  height: 90%;
+  position: absolute;
+  left: -16px;
+  top: 5%;
+  background: radial-gradient(
+    59.17% 174.66% at 50% 50%,
+    rgba(32, 235, 166, 0.425) 36%,
+    transparent 100%
+  );
+  border-radius: 40px;
+  z-index: -1;
+  filter: blur(84px);
+}
+
+@media (min-width: 1080px) {
+  .dashboard {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dashboard::before {
+    width: calc(100% + 64px);
+    height: calc(100% + 64px);
+    left: -32px;
+    top: -32px;
+  }
+}
