@@ -10,7 +10,9 @@ function Layout({ withFooter = true }) {
     <>
       <Header />
 
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
 
       {withFooter && <Footer />}
     </>
