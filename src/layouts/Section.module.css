@@ -1,0 +1,11 @@
+.section {
+  margin-block: 80px;
+}
+
+.header {
+  max-width: 804px;
+  margin: 0 auto 40px;
+  text-align: center;
+  display: grid;
+  gap: 16px;
+}
