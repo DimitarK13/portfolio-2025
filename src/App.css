@@ -38,6 +38,8 @@
     var(--clr-primary-700)
   );
 
+  --box-shadow: 0 0 120px 80px rgba(32, 235, 166, 0.1);
+
   --padding-inline: 16px;
   --container-max-sm: calc(540px + var(--padding-inline) * 2);
   --container-max-md: calc(720px + var(--padding-inline) * 2);
@@ -312,4 +314,8 @@ h6,
   width: 225px;
   height: 138px;
   transform: translate(-50%, 50%);
+}
+
+.highlight-box-shadow {
+  box-shadow: var(--box-shadow);
 }
