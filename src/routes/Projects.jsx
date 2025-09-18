@@ -1,7 +1,16 @@
+import ProjectsList from '../sections/ProjectsList';
+
 function Projects() {
   return (
     <>
-      <h1>Projects</h1>
+      <div className="container">
+        <h1 className="header">
+          Explore Solutions For{' '}
+          <span className="text-linear-gradient">Your Growth</span>
+        </h1>
+      </div>
+
+      <ProjectsList />
     </>
   );
 }

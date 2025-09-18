@@ -193,6 +193,13 @@ h6,
   padding-inline: var(--padding-inline);
 }
 
+.header {
+  max-width: 700px;
+  margin-inline: auto;
+  padding-block: 60px;
+  text-align: center;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: var(--container-max-sm);
@@ -232,6 +239,10 @@ h6,
 
   .container {
     max-width: var(--container-max-md);
+  }
+
+  .header {
+    padding-block: 60px 80px;
   }
 }
 
@@ -318,4 +329,8 @@ h6,
 
 .highlight-box-shadow {
   box-shadow: var(--box-shadow);
+}
+
+.text-center {
+  text-align: center;
 }
