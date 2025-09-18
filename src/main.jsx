@@ -7,23 +7,26 @@ import Projects from './routes/Projects.jsx';
 import Contact from './routes/Contact.jsx';
 import NotFound from './routes/NotFound.jsx';
 import ScrollToTop from './layouts/ScrollToTop.jsx';
+import { ProjectsProvider } from './context/ProjectsContext.jsx';
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-    <ScrollToTop />
+  <ProjectsProvider>
+    <BrowserRouter>
+      <ScrollToTop />
 
-    <StrictMode>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
+      <StrictMode>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="contact" element={<Contact />} />
+          </Route>
 
-        <Route element={<Layout withFooter={false} />}>
-          <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
-    </StrictMode>
-  </BrowserRouter>
+          <Route element={<Layout withFooter={false} />}>
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </StrictMode>
+    </BrowserRouter>
+  </ProjectsProvider>
 );
