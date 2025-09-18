@@ -1,7 +1,8 @@
 import { useProjects } from '../context/ProjectsContext';
 
-import Button from '../components/Button';
+import ProjectsGrid from '../layouts/ProjectsGrid';
 import ProjectCard from '../components/ProjectCard';
+import Button from '../components/Button';
 
 import styles from './FeaturedProjects.module.css';
 
@@ -18,13 +19,15 @@ function FeaturedProjects() {
 
   return (
     <div className={styles.layout}>
-      <div className={styles.projects}>
+      <ProjectsGrid>
         {projects.map((project) => {
           return <ProjectCard project={project} key={project.id} />;
         })}
-      </div>
+      </ProjectsGrid>
 
-      <Button link="/projects">All Projects</Button>
+      <div className={styles.btn}>
+        <Button link="/projects">All Projects</Button>
+      </div>
     </div>
   );
 }

@@ -1,12 +1,8 @@
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
 .layout {
   display: grid;
-  justify-items: center;
   gap: 40px;
+}
+
+.btn {
+  margin-inline: auto;
 }
