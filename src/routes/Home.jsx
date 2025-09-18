@@ -19,6 +19,7 @@ function Home() {
       </Section>
 
       <Section
+        paddingBottomNone={true}
         title={
           <>
             Who <span className="text-linear-gradient">Am I?</span>

@@ -1,5 +1,9 @@
 .section {
-  margin-block: 80px;
+  padding-block: 80px;
+}
+
+.section.pbn {
+  padding-bottom: 0;
 }
 
 .header {
