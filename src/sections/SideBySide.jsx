@@ -29,7 +29,7 @@ function SideBySide() {
 
       <motion.img
         variants={cardVariants}
-        className={styles.image}
+        className={`${styles.image} highlight-box-shadow`}
         src={portrait}
         alt="Portrait of Dimitar Kalapocev"
       />
