@@ -2,6 +2,7 @@ import Section from '../layouts/Section';
 import SideBySide from '../sections/SideBySide';
 import Hero from '../sections/Hero';
 import FeaturedProjects from '../sections/FeaturedProjects';
+import Timeline from '../sections/Timeline';
 
 function Home() {
   return (
@@ -17,6 +18,8 @@ function Home() {
       >
         <FeaturedProjects />
       </Section>
+
+      <Timeline />
 
       <Section
         paddingBottomNone={true}
