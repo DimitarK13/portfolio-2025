@@ -70,7 +70,7 @@ function Timeline() {
   }, [vantaEffect]);
 
   return (
-    <div className={styles.timeline} ref={vantaRef}>
+    <section className={styles.timeline} ref={vantaRef}>
       <div className="container">
         <div className={styles.container}>
           {TIMELINE.map((year) => (
@@ -80,7 +80,7 @@ function Timeline() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
