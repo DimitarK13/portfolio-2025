@@ -1,0 +1,25 @@
+.grid {
+  margin-top: 60px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.grid.mts {
+  margin-top: 24px;
+}
+
+.grid > * {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 1080px) {
+  .grid {
+    justify-content: center;
+  }
+}
