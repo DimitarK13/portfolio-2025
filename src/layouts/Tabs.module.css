@@ -1,0 +1,35 @@
+.header {
+  margin-bottom: 40px;
+  display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.button {
+  border-bottom: 1px solid var(--clr-neutral-100);
+  padding: 8px 60px;
+
+  flex-shrink: 0;
+  scroll-snap-align: start;
+
+  transition: 250ms ease-in-out;
+  transition-property: color, border-color;
+}
+
+.button.current {
+  color: var(--clr-primary-700);
+  border-color: var(--clr-primary-700);
+}
+
+.button:focus {
+  outline: none;
+  color: var(--clr-primary-700);
+}
+
+@media (min-width: 1080px) {
+  .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,10 +1,13 @@
 import IconsGrid from '../layouts/IconsGrid';
+import Tabs from '../layouts/Tabs';
 
 import styles from './Services.module.css';
 
 function Services() {
   return (
     <>
+      <Tabs />
+
       <IconsGrid
         icons={[
           'React',
