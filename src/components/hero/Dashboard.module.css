@@ -33,7 +33,9 @@
   .dashboard {
     grid-template-columns: 1fr 1fr;
   }
+}
 
+@media (min-width: 1280px) {
   .dashboard::before {
     width: calc(100% + 64px);
     height: calc(100% + 64px);
