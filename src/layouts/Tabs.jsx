@@ -1,3 +1,5 @@
+import { motion } from 'motion/react';
+
 import { useState } from 'react';
 import TabContent from './TabContent';
 
@@ -10,19 +12,28 @@ function Tabs() {
 
   return (
     <>
-      <header className={styles.header}>
+      <nav className={styles.header}>
         {TABS.map((tab) => (
-          <button
+          <motion.button
             key={tab}
             className={`${styles.button} body-xl ${
               openedTab === tab ? styles.current : ''
             }`}
             onClick={() => setOpenedTab(tab)}
+            initial={false}
           >
             {tab}
-          </button>
+
+            {tab === openedTab ? (
+              <motion.div
+                className={styles.underline}
+                layoutId="underline"
+                id="underline"
+              />
+            ) : null}
+          </motion.button>
         ))}
-      </header>
+      </nav>
 
       <TabContent openedTab={openedTab} />
     </>
