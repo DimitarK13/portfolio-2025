@@ -1,5 +1,3 @@
-import { motion } from 'motion/react';
-import { socialVariants } from '../../utils/animations';
 import SocialIcon from './SocialIcon';
 
 import linkedinIcon from '../../assets/images/linkedin-icon.svg';
@@ -26,9 +24,9 @@ const SOCIAL_ITEMS = [
 
 function SocialLinks() {
   return SOCIAL_ITEMS.map((item) => (
-    <motion.div key={item.link} variants={socialVariants}>
+    <div key={item.link}>
       <SocialIcon icon={item.icon} alt={item.alt} link={item.link} />
-    </motion.div>
+    </div>
   ));
 }
 

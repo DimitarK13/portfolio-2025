@@ -30,10 +30,10 @@
   transition: color 175ms ease-out;
 }
 
-.item:hover,
+/* .item:hover,
 .item:focus {
   color: var(--clr-primary-700);
-}
+} */
 
 .socials {
   padding: 12px 20px;

@@ -1,9 +1,7 @@
 import { useState } from 'react';
-import { motion } from 'motion/react';
 
 import NavLinks from '../components/nav/NavLinks';
 import SocialLinks from '../components/nav/SocialLinks';
-import { navVariants } from '../utils/animations';
 
 import menuIcon from '../assets/images/menu-icon.svg';
 import styles from './Header.module.css';
@@ -19,32 +17,13 @@ function Header() {
     <header className={styles.header}>
       <div className="container">
         <div className={styles.headerWrap}>
-          <motion.nav
-            className={`${styles.nav} ${isOpen ? styles.expanded : ''}`}
-            initial="closed"
-            animate={isOpen ? 'open' : 'closed'}
-            whileInView="open"
-            viewport={{ once: true }}
-            variants={navVariants}
-          >
+          <nav className={`${styles.nav} ${isOpen ? styles.expanded : ''}`}>
             <NavLinks onClick={() => setIsOpen(false)} />
-          </motion.nav>
+          </nav>
 
-          <motion.div
-            className={styles.socials}
-            initial="closed"
-            animate={isOpen ? 'open' : 'closed'}
-            whileInView="open"
-            viewport={{ once: true }}
-            variants={{
-              open: {
-                transition: { staggerChildren: 0.15, delayChildren: 0.3 },
-              },
-              closed: {},
-            }}
-          >
+          <div className={styles.socials}>
             <SocialLinks />
-          </motion.div>
+          </div>
 
           <button onClick={toggleNav} className={styles.navToggle}>
             <img src={menuIcon} alt="Hamburger Menu Icon" />
