@@ -42,6 +42,7 @@ const TIMELINE = [
 function Timeline() {
   const [vantaEffect, setVantaEffect] = useState(0);
   const vantaRef = useRef(null);
+  const containerRef = useRef(null);
 
   useEffect(() => {
     if (!vantaEffect) {
@@ -69,10 +70,29 @@ function Timeline() {
     };
   }, [vantaEffect]);
 
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const firstCard = container.firstElementChild;
+    const lastCard = container.lastElementChild;
+
+    if (firstCard && lastCard) {
+      const firstHeight = firstCard.offsetHeight;
+      const lastHeight = lastCard.offsetHeight;
+
+      container.style.setProperty(
+        '--first-card-height',
+        `${firstHeight / 2}px`
+      );
+      container.style.setProperty('--last-card-height', `${lastHeight / 2}px`);
+    }
+  }, []);
+
   return (
     <section className={styles.timeline} ref={vantaRef}>
       <div className="container">
-        <div className={styles.container}>
+        <div className={styles.container} ref={containerRef}>
           {TIMELINE.map((year) => (
             <TimelineCard year={year.year} key={year.year}>
               {year.content}

@@ -3,6 +3,9 @@
 }
 
 .container {
+  --first-card-height: 0px;
+  --last-card-height: 0px;
+
   position: relative;
   display: grid;
   gap: 10px;
@@ -12,7 +15,7 @@
   content: '';
   position: absolute;
   width: 1px;
-  height: calc(100% - 240px);
+  height: calc(100% - var(--first-card-height) - var(--last-card-height));
   top: 50%;
   left: 10.5px;
   transform: translateY(-50%);
