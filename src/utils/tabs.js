@@ -1,10 +1,8 @@
 import customWebsitesIcon from '../assets/images/custom-websites-icon.svg';
 import webApplicationsIcon from '../assets/images/web-applications-icon.svg';
 import cmsDevelopmentIcon from '../assets/images/cms-development-icon.svg';
-import landingPagsIcon from '../assets/images/landing-pages-icon.svg';
 import performanceOptimizationIcon from '../assets/images/performance-optimization-icon.svg';
 import seoOptimizationIcon from '../assets/images/seo-optimization-icon.svg';
-import integrationIcon from '../assets/images/integrations-icon.svg';
 import maintenanceSupportIcon from '../assets/images/maintenance-support-icon.svg';
 
 import wireframingIcon from '../assets/images/wireframing-icon.svg';
@@ -42,11 +40,6 @@ export const tabs = {
         text: 'WordPress or headless CMS setups with full customization',
       },
       {
-        icon: landingPagsIcon,
-        title: 'Landing Pages',
-        text: 'High-converting pages for campaigns, events, or products',
-      },
-      {
         icon: performanceOptimizationIcon,
         title: 'Performance Optimization',
         text: 'Faster load times and smoother experiences across all devices',
@@ -55,11 +48,6 @@ export const tabs = {
         icon: seoOptimizationIcon,
         title: 'SEO Optimization',
         text: 'Structuring and fine-tuning sites to rank higher on search engines',
-      },
-      {
-        icon: integrationIcon,
-        title: 'Integration',
-        text: 'APIs, third-party tools, and automation setups',
       },
       {
         icon: maintenanceSupportIcon,
