@@ -1,0 +1,27 @@
+.contact {
+  padding-bottom: 120px;
+}
+
+.form {
+  margin-inline: auto;
+  max-width: 420px;
+  display: grid;
+  gap: 32px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.actions button {
+  width: 100%;
+  justify-content: center;
+}
+
+.actions a {
+  padding: 8.5px;
+  border: 1px solid var(--clr-primary-300);
+  border-radius: 100%;
+}
