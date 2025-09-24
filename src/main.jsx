@@ -19,10 +19,10 @@ createRoot(document.getElementById('root')).render(
           <Route element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="projects" element={<Projects />} />
-            <Route path="contact" element={<Contact />} />
           </Route>
 
           <Route element={<Layout withFooter={false} />}>
+            <Route path="contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
