@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 
-import { boxVariants, childVariants } from '../../utils/animations';
+import { childVariants, articleVariants } from '../../utils/animations';
 
 import locationIcon from '../../assets/images/location-icon.svg';
 import serverIcon from '../../assets/images/server-icon.svg';
@@ -12,10 +12,9 @@ function InfoCard() {
   return (
     <motion.div
       className={styles.box}
-      variants={boxVariants}
+      variants={articleVariants}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
+      animate="visible"
     >
       <motion.div
         className={styles.projectAvailability}

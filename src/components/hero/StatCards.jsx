@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 
-import { cardContainerVariants, cardVariants } from '../../utils/animations';
+import { cardVariants, articleVariants } from '../../utils/animations';
 
 import boltIcon from '../../assets/images/bolt-icon.svg';
 import awardsIcon from '../../assets/images/award-icon.svg';
@@ -19,10 +19,9 @@ function StatCards() {
   return (
     <motion.div
       className={styles.cardsContainer}
-      variants={cardContainerVariants}
+      variants={articleVariants}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
+      animate="visible"
     >
       {STATISTICS.map((item) => (
         <motion.div

@@ -10,8 +10,7 @@ function Testimonial({ children, author }) {
     <motion.article
       variants={articleVariants}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
+      animate="visible"
       className={styles.testimonial}
     >
       <header className={styles.header}>
