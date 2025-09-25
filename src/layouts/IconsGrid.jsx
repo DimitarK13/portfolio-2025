@@ -12,6 +12,7 @@ import mongodbIcon from '../assets/images/logos/mongodb-logo.svg';
 import sqlIcon from '../assets/images/logos/sql-logo.svg';
 import jqueryIcon from '../assets/images/logos/jquery-logo.svg';
 import figmaIcon from '../assets/images/logos/figma-logo.svg';
+import expressjsIcon from '../assets/images/logos/expressjs-logo.svg';
 import styles from './IconsGrid.module.css';
 
 const ICONS_MAP = {
@@ -21,6 +22,7 @@ const ICONS_MAP = {
   CSS: cssIcon,
   WordPress: wordpressIcon,
   NodeJS: nodejsIcon,
+  ExpressJS: expressjsIcon,
   Python: pythonIcon,
   PHP: phpIcon,
   MongoDB: mongodbIcon,
