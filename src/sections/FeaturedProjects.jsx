@@ -8,7 +8,7 @@ import styles from './FeaturedProjects.module.css';
 
 const PROJECT_IDS = ['6722613b2be765525ff94e4f', '689b4257b032ab872be945dc'];
 
-function FeaturedProjects() {
+function FeaturedProjects({ showBtn = true }) {
   const { getProjectById, loading } = useProjects();
 
   if (loading) return <div>Loading...</div>;
@@ -25,9 +25,11 @@ function FeaturedProjects() {
         })}
       </ProjectsGrid>
 
-      <div className={styles.btn}>
-        <Button link="/projects">All Projects</Button>
-      </div>
+      {showBtn && (
+        <div className={styles.btn}>
+          <Button link="/projects">All Projects</Button>
+        </div>
+      )}
     </div>
   );
 }
