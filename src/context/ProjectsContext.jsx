@@ -55,8 +55,8 @@ export const ProjectsProvider = ({ children }) => {
 
     getProjectById: (id) =>
       projects.objects.find((project) => project.id === id),
-    getFeaturedProjects: () =>
-      projects.objects.filter((project) => project.featured),
+    getProjectBySlug: (slug) =>
+      projects.objects.find((project) => project.slug === slug),
   };
 
   return (
