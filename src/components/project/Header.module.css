@@ -1,0 +1,24 @@
+.header {
+  padding-block: 60px 120px;
+  text-align: center;
+}
+
+.title {
+  display: inline-block;
+}
+
+.link .title::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../assets/images/external-link-icon.svg');
+
+  vertical-align: top;
+  margin-left: 4px;
+}
+
+.excerpt {
+  margin: 28px auto 0;
+  max-width: 920px;
+}
