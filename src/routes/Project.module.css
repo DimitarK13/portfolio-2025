@@ -21,6 +21,7 @@
 .paragraph {
   margin-inline: auto;
   max-width: 720px;
+  white-space: pre-line;
 }
 
 @media (min-width: 1080px) {
