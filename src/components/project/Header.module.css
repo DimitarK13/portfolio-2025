@@ -1,5 +1,5 @@
 .header {
-  padding-block: 60px 120px;
+  padding-block: 60px 80px;
   text-align: center;
 }
 
@@ -21,4 +21,10 @@
 .excerpt {
   margin: 28px auto 0;
   max-width: 920px;
+}
+
+@media (min-width: 1080px) {
+  .header {
+    padding-block: 60px 120px;
+  }
 }
