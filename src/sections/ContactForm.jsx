@@ -9,7 +9,12 @@ function ContactForm() {
   return (
     <section className={styles.contact}>
       <div className="container">
-        <form className={styles.form} name="contact" method="POST">
+        <form
+          className={styles.form}
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
           <input type="hidden" name="form-name" value="contact" />
 
           <Input name="name" type="text" label="Full Name" />
