@@ -1,4 +1,4 @@
-import { useParams } from 'react-router';
+import { Navigate, useParams } from 'react-router';
 import { useProjects } from '../context/ProjectsContext';
 
 import Header from '../components/project/Header';
@@ -15,10 +15,12 @@ function Project() {
   const { id } = useParams();
   const { getProjectBySlug, loading, error } = useProjects();
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>An error occured...</div>;
+  if (loading) return <p className="text-center"> Loading projects...</p>;
+  if (error) return <p className="text-center">Error: {error}</p>;
 
   const project = getProjectBySlug(id);
+
+  if (!project) return <Navigate to="/error-404" replace />;
 
   return (
     <>
