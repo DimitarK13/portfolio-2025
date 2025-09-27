@@ -13,6 +13,8 @@ import sqlIcon from '../assets/images/logos/sql-logo.svg';
 import jqueryIcon from '../assets/images/logos/jquery-logo.svg';
 import figmaIcon from '../assets/images/logos/figma-logo.svg';
 import expressjsIcon from '../assets/images/logos/expressjs-logo.svg';
+import swiperIcon from '../assets/images/logos/swiper-logo.svg';
+import acfIcon from '../assets/images/logos/acf-logo.svg';
 import styles from './IconsGrid.module.css';
 
 const ICONS_MAP = {
@@ -29,6 +31,8 @@ const ICONS_MAP = {
   SQL: sqlIcon,
   jQuery: jqueryIcon,
   Figma: figmaIcon,
+  SwiperJS: swiperIcon,
+  ACF: acfIcon,
 };
 
 function IconsGrid({ icons, mts = false }) {
