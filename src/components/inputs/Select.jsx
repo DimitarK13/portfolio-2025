@@ -32,6 +32,7 @@ function Select({ options, label, name }) {
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
         onChange={(e) => setValue(e.target.value)}
+        required
       >
         {options.map((option) => (
           <option key={option} value={option}>

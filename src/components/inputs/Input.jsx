@@ -33,6 +33,7 @@ function Input({ name, type, label }) {
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
         onChange={(e) => setValue(e.target.value)}
+        required
       />
     </div>
   );
