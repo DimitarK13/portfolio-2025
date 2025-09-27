@@ -1,0 +1,33 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  .item {
+    width: 980px;
+  }
+
+  .item img {
+    border-radius: 40px;
+  }
+}
