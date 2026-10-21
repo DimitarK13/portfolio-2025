@@ -34,7 +34,7 @@ function Home() {
         paddingBottomNone={true}
         title={
           <>
-            Who <span className="text-linear-gradient">Am I?</span>
+            About <span className="text-linear-gradient">Me</span>
           </>
         }
       >
