@@ -18,16 +18,18 @@ function NotFound() {
         <span>0</span>
         <span>4</span>
       </p>
-      <motion.h1 variants={textVariants} className={`${styles.title} h3`}>
-        The Darkness Can Be <span className="text-linear-gradient">Lonely</span>
+      <motion.h1 variants={textVariants} className={`${styles.title} h2`}>
+        There’s no data in <span className="text-linear-gradient">The Void</span>
       </motion.h1>
       <motion.p variants={textVariants} className={styles.text}>
-        You are not a tree tho... Move out of it with the help of the button
-        below
+        Escape it with the buttons below
       </motion.p>
 
-      <motion.div variants={textVariants}>
-        <Button link="/">Home</Button>
+      <motion.div variants={textVariants} className={styles.buttons}>
+        <Button link="/data-explorations">Data Explorations</Button>
+        <Button link="/" style="secondary">
+          Home
+        </Button>
       </motion.div>
     </motion.div>
   );
