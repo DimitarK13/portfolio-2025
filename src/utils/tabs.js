@@ -1,130 +1,222 @@
-import customWebsitesIcon from '../assets/images/custom-websites-icon.svg';
 import webApplicationsIcon from '../assets/images/web-applications-icon.svg';
 import cmsDevelopmentIcon from '../assets/images/cms-development-icon.svg';
 import performanceOptimizationIcon from '../assets/images/performance-optimization-icon.svg';
-import seoOptimizationIcon from '../assets/images/seo-optimization-icon.svg';
+import integrationsIcon from '../assets/images/integrations-icon.svg';
+import landingPagesIcon from '../assets/images/landing-pages-icon.svg';
 import maintenanceSupportIcon from '../assets/images/maintenance-support-icon.svg';
 
-import wireframingIcon from '../assets/images/wireframing-icon.svg';
-import usabilityTestingIcon from '../assets/images/usability-testing-icon.svg';
-import uxDesignIcon from '../assets/images/ux-design-icon.svg';
-import uiDesignIcon from '../assets/images/ui-design-icon.svg';
-import prototypingAnimationsIcon from '../assets/images/prototyping-animations-icon.svg';
-import accessibilityDrivenDesignIcon from '../assets/images/accessibility-driven-design-icon.svg';
+import dataCleaningIcon from '../assets/images/data-cleaning-icon.svg';
+import exploratoryDataAnalysisIcon from '../assets/images/exploratory-data-analysis-icon.svg';
+import dataVisualizationIcon from '../assets/images/data-visualization-icon.svg';
+import statisticalAnalysisIcon from '../assets/images/statistical-analysis-icon.svg';
+import insightGenerationIcon from '../assets/images/insight-generation-icon.svg';
+import dataQueryingIcon from '../assets/images/data-querying-icon.svg';
 
-import oneOnOneSessionsIcon from '../assets/images/one-on-one-sessions-icon.svg';
-import practicalCodingGuidanceIcon from '../assets/images/practical-coding-guidance-icon.svg';
-import bestPracticesIcon from '../assets/images/best-practices-icon.svg';
-import pairProgrammingIcon from '../assets/images/pair-programming-icon.svg';
-import goalSettingIcon from '../assets/images/goal-setting-icon.svg';
-import workshopsTalksIcon from '../assets/images/workshops-talks-icon.svg';
+import pythonLogo from '../assets/images/logos/python-logo.svg';
+import jsLogo from '../assets/images/logos/javascript-logo.svg';
+import tsLogo from '../assets/images/logos/typescript-logo.svg';
+import numpyLogo from '../assets/images/logos/numpy-logo.svg';
+import pandasLogo from '../assets/images/logos/pandas-logo.svg';
+import matplotlibLogo from '../assets/images/logos/matplotlib-logo.svg';
+import seabornLogo from '../assets/images/logos/seaborn-logo.svg';
+import sqlLogo from '../assets/images/logos/sql-logo.svg';
+import phpLogo from '../assets/images/logos/php-logo.svg';
+import reactLogo from '../assets/images/logos/react-logo.svg';
+import nextjsLogo from '../assets/images/logos/nextjs-logo.svg';
+import tailwindLogo from '../assets/images/logos/tailwind-logo.svg';
+import nodejsLogo from '../assets/images/logos/nodejs-logo.svg';
+import expressjsLogo from '../assets/images/logos/expressjs-logo.svg';
+import mongodbLogo from '../assets/images/logos/mongodb-logo.svg';
+import gitLogo from '../assets/images/logos/git-logo.svg';
+import githubLogo from '../assets/images/logos/github-logo.svg';
+import wordpressLogo from '../assets/images/logos/wordpress-logo.svg';
 
 export const tabs = {
-  'Web Development': {
-    text: 'Get a website that works as hard as you do - fast, secure, and built to grow with your business.',
-    button: 'Get Your Project',
+  'Data Analysis': {
+    technologies: [
+      {
+        title: 'Programming',
+        languages: [
+          {
+            name: 'Python',
+            icon: pythonLogo,
+          },
+          {
+            name: 'JavaScript',
+            icon: jsLogo,
+          },
+        ],
+      },
+      {
+        title: 'Analysis',
+        languages: [
+          {
+            name: 'NumPy',
+            icon: numpyLogo,
+          },
+          {
+            name: 'Pandas',
+            icon: pandasLogo,
+          },
+        ],
+      },
+      {
+        title: 'Visualization',
+        languages: [
+          {
+            name: 'Matplotlib',
+            icon: matplotlibLogo,
+          },
+          {
+            name: 'Seaborn',
+            icon: seabornLogo,
+          },
+        ],
+      },
+      {
+        title: 'Databases',
+        languages: [
+          {
+            name: 'SQL',
+            icon: sqlLogo,
+          },
+        ],
+      },
+    ],
     features: [
       {
-        icon: customWebsitesIcon,
-        title: 'Custom Websites',
-        text: 'Fully tailored, responsive websites built to match your brand and goals',
+        icon: dataCleaningIcon,
+        title: 'Data Cleaning',
+        text: 'Prepare datasets by handling missing values, duplicates, inconsistent formats, and irrelevant columns.',
       },
+      {
+        icon: exploratoryDataAnalysisIcon,
+        title: 'Exploratory Data Analysis',
+        text: 'Explore datasets to identify patterns, trends, relationships, and anomalies.',
+      },
+      {
+        icon: dataVisualizationIcon,
+        title: 'Data Visualization',
+        text: 'Create charts that communicate findings and make complex data easier to understand.',
+      },
+      {
+        icon: statisticalAnalysisIcon,
+        title: 'Statistical Analysis',
+        text: 'Summarize data and investigate distributions, relationships, and meaningful differences.',
+      },
+      {
+        icon: insightGenerationIcon,
+        title: 'Insight Generation',
+        text: 'Translate analytical results into evidence-based conclusions and practical recommendations.',
+      },
+      {
+        icon: dataQueryingIcon,
+        title: 'Data Querying',
+        text: 'Retrieve, filter, join, and aggregate data from relational databases to answer analytical questions.',
+      },
+    ],
+  },
+  'Software Development': {
+    technologies: [
+      {
+        title: 'Languages',
+        languages: [
+          {
+            name: 'JavaScript',
+            icon: jsLogo,
+          },
+          {
+            name: 'TypeScript',
+            icon: tsLogo,
+          },
+          {
+            name: 'PHP',
+            icon: phpLogo,
+          },
+        ],
+      },
+      {
+        title: 'Frontend',
+        languages: [
+          {
+            name: 'React',
+            icon: reactLogo,
+          },
+          {
+            name: 'NextJS',
+            icon: nextjsLogo,
+          },
+          {
+            name: 'Tailwind',
+            icon: tailwindLogo,
+          },
+        ],
+      },
+      {
+        title: 'Backend & Databases',
+        languages: [
+          {
+            name: 'NodeJS',
+            icon: nodejsLogo,
+          },
+          {
+            name: 'ExpressJS',
+            icon: expressjsLogo,
+          },
+          {
+            name: 'MongoDB',
+            icon: mongodbLogo,
+          },
+        ],
+      },
+      {
+        title: 'Tools',
+        languages: [
+          {
+            name: 'Git',
+            icon: gitLogo,
+          },
+          {
+            name: 'GitHub',
+            icon: githubLogo,
+          },
+          {
+            name: 'WordPress',
+            icon: wordpressLogo,
+          },
+        ],
+      },
+    ],
+    features: [
       {
         icon: webApplicationsIcon,
         title: 'Web Applications',
-        text: 'Scalable and interactive apps that bring complex ideas to life online',
+        text: 'Scalable and interactive apps that bring complex ideas to life online.',
       },
       {
         icon: cmsDevelopmentIcon,
         title: 'CMS Development',
-        text: 'WordPress or headless CMS setups with full customization',
+        text: 'WordPress or headless CMS setups with full customization.',
       },
       {
         icon: performanceOptimizationIcon,
         title: 'Performance Optimization',
-        text: 'Faster load times and smoother experiences across all devices',
+        text: 'Faster load times and smoother experiences across all devices.',
       },
       {
-        icon: seoOptimizationIcon,
-        title: 'SEO Optimization',
-        text: 'Structuring and fine-tuning sites to rank higher on search engines',
+        icon: integrationsIcon,
+        title: 'Integrations',
+        text: 'APIs, third-party tools, and automation setups.',
+      },
+      {
+        icon: landingPagesIcon,
+        title: 'Landing Pages',
+        text: 'High-converting pages for campaigns, events, or products.',
       },
       {
         icon: maintenanceSupportIcon,
         title: 'Maintenance & Support',
         text: 'Regular updates, backups, and bug fixes',
-      },
-    ],
-  },
-  'UX/UI Design': {
-    text: 'Turn ideas into stunning, user-friendly designs that people love to use.',
-    button: 'Get Your Project',
-    features: [
-      {
-        icon: wireframingIcon,
-        title: 'Wireframing',
-        text: 'Rapid sketches to test ideas early',
-      },
-      {
-        icon: usabilityTestingIcon,
-        title: 'Usability Testing',
-        text: 'Spotting friction points and improving the experience',
-      },
-      {
-        icon: uxDesignIcon,
-        title: 'UX Design',
-        text: 'Crafting smooth, intuitive user journeys for better engagement',
-      },
-      {
-        icon: uiDesignIcon,
-        title: 'UI Design',
-        text: 'Modern, visually appealing interfaces that match your brand identity',
-      },
-      {
-        icon: prototypingAnimationsIcon,
-        title: 'Prototyping and Animations',
-        text: 'Interactive previews that bring designs to life',
-      },
-      {
-        icon: accessibilityDrivenDesignIcon,
-        title: 'Accessibility-Driven Design',
-        text: 'Ensuring inclusivity so everyone can use your product with ease',
-      },
-    ],
-  },
-  Mentoring: {
-    text: 'Level up your skills with personal guidance, real-world insights, and hands-on support.',
-    button: 'Book a Session',
-    features: [
-      {
-        icon: oneOnOneSessionsIcon,
-        title: '1-on-1 Sessions',
-        text: 'Tailored mentoring for juniors or beginners',
-      },
-      {
-        icon: practicalCodingGuidanceIcon,
-        title: 'Practical Coding Guidance',
-        text: 'Helping with debug, structure, and think like developers',
-      },
-      {
-        icon: bestPracticesIcon,
-        title: 'Best Practices',
-        text: 'Version control, clean code, project organization',
-      },
-      {
-        icon: pairProgrammingIcon,
-        title: 'Pair Programming',
-        text: 'Working side-by-side to solve real challenges',
-      },
-      {
-        icon: goalSettingIcon,
-        title: 'Goal Setting',
-        text: 'Keeping you motivated and progressing',
-      },
-      {
-        icon: workshopsTalksIcon,
-        title: 'Workshops & Talks',
-        text: 'Sharing knowledge in small groups or events',
       },
     ],
   },
