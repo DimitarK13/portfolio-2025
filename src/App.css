@@ -288,6 +288,7 @@ h6,
 
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
 
   position: relative;
