@@ -22,10 +22,10 @@ function Home() {
       <Section
         title={
           <>
-            What <span className="text-linear-gradient">You Get</span>
+            My <span className="text-linear-gradient">Skillset</span>
           </>
         }
-        text="From wireframe, to back-up, you get the full web experience. Focus completely on your business, while I help you scale it digitally."
+        text="My toolkit combines programming, data analysis, and visualization to turn data into clear, actionable insights. I'm continuously expanding my skills through practical projects and hands-on learning."
       >
         <Services />
       </Section>
