@@ -3,6 +3,7 @@ import SideBySide from '../sections/SideBySide';
 import Hero from '../sections/Hero';
 import FeaturedProjects from '../sections/FeaturedProjects';
 import Services from '../sections/Services';
+import Contact from '../sections/Contact';
 
 function Home() {
   return (
@@ -31,7 +32,6 @@ function Home() {
       </Section>
 
       <Section
-        paddingBottomNone={true}
         title={
           <>
             About <span className="text-linear-gradient">Me</span>
@@ -39,6 +39,17 @@ function Home() {
         }
       >
         <SideBySide />
+      </Section>
+
+      <Section
+        paddingBottomNone={true}
+        title={
+          <>
+            Let's <span className="text-linear-gradient">Connect</span>
+          </>
+        }
+      >
+        <Contact />
       </Section>
     </>
   );
