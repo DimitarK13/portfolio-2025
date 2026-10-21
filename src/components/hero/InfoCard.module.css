@@ -24,11 +24,7 @@
 .line {
   width: 100%;
   height: 1px;
-  background-image: linear-gradient(
-    to right,
-    var(--clr-neutral-100) 40%,
-    var(--clr-neutral-950) 0%
-  );
+  background-image: linear-gradient(to right, var(--clr-neutral-100) 40%, var(--clr-neutral-950) 0%);
   background-position: bottom;
   background-size: 20px 1px;
   background-repeat: repeat-x;
@@ -49,12 +45,13 @@
   .line {
     height: 132px;
     width: 1px;
-    background-image: linear-gradient(
-      var(--clr-neutral-100) 40%,
-      var(--clr-neutral-950) 0%
-    );
+    background-image: linear-gradient(var(--clr-neutral-100) 40%, var(--clr-neutral-950) 0%);
     background-position: right;
     background-size: 1px 20px;
     background-repeat: repeat-y;
+  }
+
+  .projectAvailability {
+    max-width: 164px;
   }
 }

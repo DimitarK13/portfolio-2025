@@ -9,9 +9,9 @@ function Dashboard() {
     <div className={styles.dashboard}>
       <StatCards />
 
-      <Testimonial author="Neotek Systems">
-        Thanks to the website Dimitar built, we receive daily calls from
-        customers interested in our products.
+      <Testimonial author="My Approach">
+        I combine programming, analytical thinking, and visualization to explore data, uncover patterns, and communicate
+        findings clearly.
       </Testimonial>
 
       <InfoCard />
