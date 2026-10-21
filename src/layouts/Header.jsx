@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import NavLinks from '../components/nav/NavLinks';
-import SocialLinks from '../components/nav/SocialLinks';
 
 import menuIcon from '../assets/images/menu-icon.svg';
 import styles from './Header.module.css';
@@ -20,10 +19,6 @@ function Header() {
           <nav className={`${styles.nav} ${isOpen ? styles.expanded : ''}`}>
             <NavLinks onClick={() => setIsOpen(false)} />
           </nav>
-
-          <div className={styles.socials}>
-            <SocialLinks />
-          </div>
 
           <button onClick={toggleNav} className={styles.navToggle}>
             <img src={menuIcon} alt="Hamburger Menu Icon" />

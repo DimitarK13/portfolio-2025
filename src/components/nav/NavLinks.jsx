@@ -5,8 +5,8 @@ import styles from '../../layouts/Header.module.css';
 
 const NAV_ITEMS = [
   { to: '/', label: 'Home' },
-  { to: '/projects', label: 'Projects' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/data-explorations', label: 'Data Explorations' },
+  { to: '/#contact', label: 'Contact' },
 ];
 
 function NavLinks({ onClick }) {
