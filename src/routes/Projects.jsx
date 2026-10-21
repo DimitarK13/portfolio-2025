@@ -5,8 +5,7 @@ function Projects() {
     <>
       <div className="container">
         <h1 className="header">
-          Explore Solutions For{' '}
-          <span className="text-linear-gradient">Your Growth</span>
+          Latest <span className="text-linear-gradient">Explorations</span>
         </h1>
       </div>
 
