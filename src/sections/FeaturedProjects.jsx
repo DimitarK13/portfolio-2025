@@ -6,16 +6,14 @@ import Button from '../components/Button';
 
 import styles from './FeaturedProjects.module.css';
 
-const PROJECT_IDS = ['6722613b2be765525ff94e4f', '689b4257b032ab872be945dc'];
+const PROJECT_IDS = ['6ad9212acd794e71a930e3ac', '6ad9212acd794e71a930e3ac', '6ad9212acd794e71a930e3ac'];
 
 function FeaturedProjects({ showBtn = true }) {
   const { getProjectById, loading } = useProjects();
 
   if (loading) return <div>Loading...</div>;
 
-  const projects = PROJECT_IDS.map((id) => getProjectById(id)).filter(
-    (project) => project !== undefined
-  );
+  const projects = PROJECT_IDS.map((id) => getProjectById(id)).filter((project) => project !== undefined);
 
   return (
     <div className={styles.layout}>
@@ -27,7 +25,7 @@ function FeaturedProjects({ showBtn = true }) {
 
       {showBtn && (
         <div className={styles.btn}>
-          <Button link="/projects">All Projects</Button>
+          <Button link="/data-explorations">All Data Explorations</Button>
         </div>
       )}
     </div>
