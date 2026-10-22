@@ -22,7 +22,7 @@ function Contact() {
       </div>
 
       <div className={styles.btn}>
-        <Button link="/src/assets/CV.pdf" isExternal>
+        <Button link="/CV.pdf" isExternal>
           CV
         </Button>
       </div>

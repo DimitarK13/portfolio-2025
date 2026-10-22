@@ -21,7 +21,7 @@ function Hero() {
 
           <motion.div variants={textVariants} className={styles.buttons}>
             <Button link="/data-explorations">Data Explorations</Button>
-            <Button link="/src/assets/CV.pdf" style="secondary" isExternal>
+            <Button link="/CV.pdf" style="secondary" isExternal>
               CV
             </Button>
           </motion.div>
