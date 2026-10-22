@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.btn {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1080px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

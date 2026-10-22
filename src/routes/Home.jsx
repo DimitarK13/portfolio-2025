@@ -2,24 +2,14 @@ import Section from '../layouts/Section';
 import SideBySide from '../sections/SideBySide';
 import Hero from '../sections/Hero';
 import FeaturedProjects from '../sections/FeaturedProjects';
-import Timeline from '../sections/Timeline';
 import Services from '../sections/Services';
+import Contact from '../sections/Contact';
+import Experience from '../sections/Experience';
 
 function Home() {
   return (
     <>
       <Hero />
-
-      <Section
-        title={
-          <>
-            What <span className="text-linear-gradient">You Get</span>
-          </>
-        }
-        text="From wireframe, to back-up, you get the full web experience. Focus completely on your business, while I help you scale it digitally."
-      >
-        <Services />
-      </Section>
 
       <Section
         title={
@@ -31,17 +21,47 @@ function Home() {
         <FeaturedProjects />
       </Section>
 
-      <Timeline />
-
       <Section
-        paddingBottomNone={true}
         title={
           <>
-            Who <span className="text-linear-gradient">Am I?</span>
+            My <span className="text-linear-gradient">Skillset</span>
+          </>
+        }
+        text="My toolkit combines programming, data analysis, and visualization to turn data into clear, actionable insights. I'm continuously expanding my skills through practical projects and hands-on learning."
+      >
+        <Services />
+      </Section>
+
+      <Section
+        title={
+          <>
+            About <span className="text-linear-gradient">Me</span>
           </>
         }
       >
         <SideBySide />
+      </Section>
+
+      <Section
+        title={
+          <>
+            My <span className="text-linear-gradient">Experience</span>
+          </>
+        }
+      >
+        <Experience />
+      </Section>
+
+      <Section
+        paddingBottomNone={true}
+        id="contact"
+        title={
+          <>
+            Let's <span className="text-linear-gradient">Connect</span>
+          </>
+        }
+      >
+        <Contact />
       </Section>
     </>
   );

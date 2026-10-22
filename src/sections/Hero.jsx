@@ -10,28 +10,20 @@ function Hero() {
   return (
     <section className={styles.hero}>
       <div className="container">
-        <motion.div
-          className={styles.content}
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
+        <motion.div className={styles.content} variants={containerVariants} initial="hidden" animate="visible">
           <motion.h1 variants={textVariants} className={styles.heading}>
-            Elevate <span className="text-linear-gradient">Your Online</span>{' '}
-            Presence
+            Software Developer Transitioning to <span className="text-linear-gradient">Data Analysis</span>
           </motion.h1>
 
-          <motion.p
-            variants={textVariants}
-            className={`${styles.text} body-xl`}
-          >
-            I've helped over 30 companies and organizations go digital. Let's
-            create an online presence that engages your audience and grows your
-            business.
+          <motion.p variants={textVariants} className={`${styles.text} body-l`}>
+            Hi, I’m Dimitar - a Software Developer with a passion for data and analytical problem solving.
           </motion.p>
 
-          <motion.div variants={textVariants}>
-            <Button link="/contact">Get Your Project</Button>
+          <motion.div variants={textVariants} className={styles.buttons}>
+            <Button link="/data-explorations">Data Explorations</Button>
+            <Button link="/src/assets/CV.pdf" style="secondary" isExternal>
+              CV
+            </Button>
           </motion.div>
         </motion.div>
 

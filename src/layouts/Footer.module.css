@@ -1,6 +1,6 @@
 .footer {
   margin-top: 100px;
-  padding-block: 28px;
+  padding-block: 24px;
   background-color: var(--clr-neutral-950);
 }
 
@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .logo {
@@ -19,6 +19,6 @@
 @media (min-width: 768px) {
   .footer {
     margin-top: 120px;
-    padding-block: 40px;
+    padding-block: 24px;
   }
 }

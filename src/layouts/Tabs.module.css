@@ -1,22 +1,28 @@
 .header {
+  padding: 4px;
   margin-bottom: 40px;
   display: flex;
 
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+
+  background-color: var(--clr-neutral-950);
+  border-radius: 1000vw;
 }
 
 .button {
   position: relative;
-  padding: 8px 60px;
+  padding: 4px 60px;
   color: var(--clr-neutral-500);
-  border-bottom: 1px solid var(--clr-neutral-500);
 
   flex-shrink: 0;
   scroll-snap-align: start;
 
   transition: 250ms ease-in-out;
   transition-property: color;
+
+  border: 1000vw;
+  isolation: isolate;
 }
 
 .button.current {
@@ -30,17 +36,21 @@
 
 .underline {
   position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: var(--clr-primary-700);
-  z-index: 5;
+  inset: 0;
+  background: var(--clr-neutral-900);
+  border-radius: 1000vw;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .button {
+    flex: 0 1 100%;
+  }
 }
 
 @media (min-width: 1080px) {
   .header {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }

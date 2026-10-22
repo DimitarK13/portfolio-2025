@@ -9,8 +9,8 @@
   border: 1px solid var(--clr-neutral-900);
   border-radius: 16px;
 
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   display: grid;
   place-content: center;
 }
@@ -18,4 +18,5 @@
 .text {
   display: inline-block;
   margin-top: 4px;
+  color: var(--clr-neutral-200);
 }

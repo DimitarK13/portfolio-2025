@@ -22,7 +22,7 @@ export const ProjectsProvider = ({ children }) => {
       setLoading(true);
 
       const response = await fetch(
-        'https://api.cosmicjs.com/v3/buckets/personal-portfolio-production/objects?pretty=true&query=%7B%22type%22:%22projects%22%7D&limit=10&read_key=0ciO1wztHQkfxVXbFkyFeJXKk2tkCPwBqcNvGVpNi9YiRf48Al&depth=1&props=slug,title,metadata,id,thumbnail'
+        'https://api.cosmicjs.com/v3/buckets/personal-portfolio-production/objects?pretty=true&query=%7B%22type%22:%22projects%22%7D&limit=10&read_key=0ciO1wztHQkfxVXbFkyFeJXKk2tkCPwBqcNvGVpNi9YiRf48Al&depth=1&props=slug,title,metadata,id,thumbnail',
       );
 
       if (!response.ok) {
@@ -52,16 +52,7 @@ export const ProjectsProvider = ({ children }) => {
     loading,
     error,
     refetchProjects,
-
-    getProjectById: (id) =>
-      projects.objects.find((project) => project.id === id),
-    getProjectBySlug: (slug) =>
-      projects.objects.find((project) => project.slug === slug),
   };
 
-  return (
-    <ProjectsContext.Provider value={value}>
-      {children}
-    </ProjectsContext.Provider>
-  );
+  return <ProjectsContext.Provider value={value}>{children}</ProjectsContext.Provider>;
 };

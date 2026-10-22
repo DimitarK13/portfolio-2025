@@ -7,18 +7,13 @@ import styles from './Testimonial.module.css';
 
 function Testimonial({ children, author }) {
   return (
-    <motion.article
-      variants={articleVariants}
-      initial="hidden"
-      animate="visible"
-      className={styles.testimonial}
-    >
+    <motion.article variants={articleVariants} initial="hidden" animate="visible" className={styles.testimonial}>
       <header className={styles.header}>
         <img className={styles.icon} src={awardsIcon} alt="Awards Icon" />
-        <p className={`${styles.author} body-s`}>{author}</p>
+        <p className={`${styles.author} h6`}>{author}</p>
       </header>
 
-      <p className={`${styles.text} body-l`}>{children}</p>
+      <p className={styles.text}>{children}</p>
     </motion.article>
   );
 }

@@ -2,8 +2,8 @@ import { AnimatePresence, motion } from 'motion/react';
 
 import { tabs } from '../utils/tabs';
 
+import Icon from '../components/Icon';
 import IconCard from '../components/IconCard';
-import Button from '../components/Button';
 
 import styles from './TabContent.module.css';
 
@@ -18,19 +18,26 @@ function TabContent({ openedTab }) {
         exit={{ y: -10, opacity: 0 }}
         transition={{ duration: 0.2 }}
       >
-        <div>
-          <p className={styles.text}>{tabs[openedTab]?.text}</p>
-          <Button link="/contact">{tabs[openedTab]?.button}</Button>
+        <div className={styles.technologies}>
+          {tabs[openedTab]?.technologies.map((technology) => {
+            return (
+              <div className={styles.technologyGroup} key={technology.title}>
+                <p className="h4">{technology.title}</p>
+
+                <div className={styles.languages}>
+                  {technology.languages.map((language) => {
+                    return <Icon key={language.name} {...language} />;
+                  })}
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         <div className={styles.cards}>
           {tabs[openedTab]?.features.map((feature) => {
             return (
-              <IconCard
-                icon={feature.icon}
-                title={feature.title}
-                key={feature.title}
-              >
+              <IconCard icon={feature.icon} title={feature.title} key={feature.title}>
                 {feature.text}
               </IconCard>
             );
