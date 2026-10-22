@@ -2,6 +2,25 @@ import Button from './Button';
 
 import styles from './ProjectCard.module.css';
 
+function RenderTechnologies({ project }) {
+  const technologies = project.metadata.technologies;
+  const technologiesLength = technologies.length;
+  const technologiesToRender = technologies.slice(0, 3);
+
+  return (
+    <>
+      {technologiesToRender.map((technology) => (
+        <span key={technology.technology} className={`body-xs ${styles.technology}`}>
+          {technology.technology}
+        </span>
+      ))}
+      {technologiesLength - 3 > 0 ? (
+        <span className={`body-xs ${styles.technology}`}>+{technologiesLength - 3}</span>
+      ) : null}
+    </>
+  );
+}
+
 function ProjectCard({ project }) {
   return (
     <div className={styles.card}>
@@ -13,9 +32,7 @@ function ProjectCard({ project }) {
           <p className={styles.excerpt}>{project.metadata.excerpt}</p>
 
           <div className={styles.technologies}>
-            {project.metadata.technologies.map((technology) => {
-              return <span className={`body-xs ${styles.technology}`}>{technology.technology}</span>;
-            })}
+            <RenderTechnologies project={project} />
           </div>
         </div>
 
