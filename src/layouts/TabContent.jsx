@@ -21,12 +21,12 @@ function TabContent({ openedTab }) {
         <div className={styles.technologies}>
           {tabs[openedTab]?.technologies.map((technology) => {
             return (
-              <div className={styles.technologyGroup}>
+              <div className={styles.technologyGroup} key={technology.title}>
                 <p className="h4">{technology.title}</p>
 
                 <div className={styles.languages}>
                   {technology.languages.map((language) => {
-                    return <Icon {...language} />;
+                    return <Icon key={language.name} {...language} />;
                   })}
                 </div>
               </div>
