@@ -1,4 +1,5 @@
 import Button from './Button';
+import TechChip from './TechChip';
 
 import styles from './ProjectCard.module.css';
 
@@ -10,13 +11,9 @@ function RenderTechnologies({ project }) {
   return (
     <>
       {technologiesToRender.map((technology) => (
-        <span key={technology.technology} className={`body-xs ${styles.technology}`}>
-          {technology.technology}
-        </span>
+        <TechChip key={technology.technology} value={technology.technology} />
       ))}
-      {technologiesLength - 3 > 0 ? (
-        <span className={`body-xs ${styles.technology}`}>+{technologiesLength - 3}</span>
-      ) : null}
+      {technologiesLength - 3 > 0 ? <TechChip value={`+${technologiesLength - 3}`} /> : null}
     </>
   );
 }
