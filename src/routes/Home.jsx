@@ -54,6 +54,7 @@ function Home() {
 
       <Section
         paddingBottomNone={true}
+        id="contact"
         title={
           <>
             Let's <span className="text-linear-gradient">Connect</span>
