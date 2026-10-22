@@ -4,6 +4,7 @@ import Hero from '../sections/Hero';
 import FeaturedProjects from '../sections/FeaturedProjects';
 import Services from '../sections/Services';
 import Contact from '../sections/Contact';
+import Experience from '../sections/Experience';
 
 function Home() {
   return (
@@ -39,6 +40,16 @@ function Home() {
         }
       >
         <SideBySide />
+      </Section>
+
+      <Section
+        title={
+          <>
+            My <span className="text-linear-gradient">Experience</span>
+          </>
+        }
+      >
+        <Experience />
       </Section>
 
       <Section
