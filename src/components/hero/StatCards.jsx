@@ -10,9 +10,9 @@ import styles from './StatCards.module.css';
 
 const STATISTICS = [
   { icon: codeIcon, heading: 'Python', description: 'Primary Language' },
-  { icon: projectsIcon, heading: '3 Projects', description: 'Data Analysis' },
+  { icon: projectsIcon, heading: '1 Project', description: 'Data Analysis' },
   { icon: chartIcon, heading: 'Visualizations', description: 'Matplotlib · Seaborn' },
-  { icon: experienceIcon, heading: '3+ Years', description: 'Software Development' },
+  { icon: experienceIcon, heading: '3+ Years Experience', description: 'Professional Software Development' },
 ];
 
 function StatCards() {
